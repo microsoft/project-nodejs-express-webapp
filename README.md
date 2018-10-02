@@ -7,6 +7,16 @@
 
 Sample Nodejs Express web application built using Visual Studio 2017.
 
+## Running the Application
+
+Install the npm dependencies and start the server:
+```
+npm install
+npm start
+```
+
+Visit `localhost:3000` in a web browser to see the result.
+
 ## License:
 
 See [LICENSE](LICENSE).
