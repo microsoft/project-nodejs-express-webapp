@@ -7,7 +7,7 @@
   },
   "description": "nodejs-webapp-express",
   "author": {
-    "name": "alagrawa"
+    "name": "Vishnu"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
