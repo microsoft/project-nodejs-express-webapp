@@ -9,7 +9,7 @@ describe('users route', () => {
             .expect(200)
             .end((err, res) => {
                 if (err) return done(err);
-                expect(res.text).toBe('hey');
+                expect(res.text).toBe('respond with a list of users');
                 return done();
             });
     });
