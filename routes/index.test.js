@@ -1,13 +1,11 @@
 const request = require('supertest');
-const indexRoute = require('./index');
+const app = require('../app');
 
 describe('index route', () => {
-    it('should respond with a 200 code', () => {
-        request(indexRoute)
+    it('should respond with a 200 code', done => {
+        request(app)
             .get('/')
             .expect(200)
-            .end((err, res) => {
-                if (err) throw err;
-            });
+            .end(done);
     });
 });

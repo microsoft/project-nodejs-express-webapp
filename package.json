@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app",
+    "start": "node server",
     "test": "jest --coverage --coverageDirectory=output/coverage/jest"
   },
   "description": "nodejs-webapp-express",
