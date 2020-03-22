@@ -11,10 +11,10 @@ pipeline {
             steps {
                 sh 'npm test'
             }
-        }
-        post {
-            always {
-                step([$class: 'CoberturaPublisher', coberturaReportFile: 'output/coverage/jest/cobertura-coverage.xml'])
+            post {
+                always {
+                    step([$class: 'CoberturaPublisher', coberturaReportFile: 'output/coverage/jest/cobertura-coverage.xml'])
+                }
             }
         }
         stage('pack') {
