@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "test": "jest"
   },
   "description": "nodejs-webapp-express",
   "author": {
@@ -20,5 +21,13 @@
   },
   "engines": {
     "node": "~6.10.x"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": ["/node_modules/"]
   }
 }
