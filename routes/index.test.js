@@ -1,8 +1,8 @@
 const request = require('supertest');
-const usersRoute = require('./users');
+const indexRoute = require('./index');
 
 describe('index route', () => {
     it('should respond with a 200 code', () => {
-        request(usersRoute).expect(200);
+        request(indexRoute).get('/').expect(200);
     });
 });
