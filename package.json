@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app",
-    "test": "jest"
+    "test": "jest --coverage --coverageDirectory=output/coverage/jest"
   },
   "description": "nodejs-webapp-express",
   "author": {
@@ -28,6 +28,7 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "coveragePathIgnorePatterns": ["/node_modules/"]
+    "coveragePathIgnorePatterns": ["/node_modules/"],
+    "coverageReporters": ["text", "cobertura"]
   }
 }
